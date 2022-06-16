@@ -1,0 +1,27 @@
+#include<stdio.h>
+	void create process3(void)
+            {
+              int pid1,pid2;
+              static char *argv[3] = (“compiler”,”file to compile”,0);
+              pid1=fork( );
+              if (pid1==0)
+              {
+                 execv(“compiler”,argv);
+              }
+              argv[0]=”editor”
+              argv[1]=”filetoEdit”
+              argv[2]=0;
+              if(pid2=fork())==0)
+              {
+          execv(“editor”,argv);
+          }
+          int reta,retb;
+          int pida = wait (&reta);
+          int pidb=wait (&retb);
+        }
+
+        Void main()
+        { 
+          create process( );
+          printf(“The process has been invoked successfully”); 
+         }
